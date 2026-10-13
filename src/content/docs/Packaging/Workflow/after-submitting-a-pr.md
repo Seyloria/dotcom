@@ -24,13 +24,13 @@ You can follow the build at [dash.aerynos.dev](https://dash.aerynos.dev/). Use t
 
 ## 3. The package is published to the volatile repository
 
-After a successful build, the package is published to the **volatile** repository. This repository is where newly built packages are made available first, while they are being tested. The [basic packaging workflow](/packaging/workflow/basic-workflow/) explains how packagers can configure a local repository and test packages from the volatile stream.
+After a successful build, the package is published to the **volatile** repository. This repository is where newly built packages are made available first, while they are being tested. The [basic packaging workflow](/packaging/workflow/basic-workflow/) explains how packagers can configure a local repository and test packages against the volatile stream.
 
 Publication can take a little time when the build queue contains dependency chains. If the package is not visible yet, check the dashboard for pending or blocked builds before reporting a problem.
 
-## 4. The package moves to the stable repository
+## 4. The package moves to the unstable repository
 
-After the package has been tested in the volatile repository, the maintainers synchronise the tested state to the **stable** repository. This promotion is a repository maintenance step; contributors do not need to open another pull request for it.
+After the package has been tested in the volatile repository, the maintainers synchronise the tested state to the **unstable** repository. This promotion is a repository maintenance step; contributors do not need to open another pull request for it.
 
 The package therefore follows this path:
 
@@ -41,7 +41,7 @@ build queue and dependency builds
       ↓
 volatile repository
       ↓
-stable repository
+unstable repository
 ```
 
 For the background on the repository streams, see the [aerynOS repository model](/aerynos/philosophy/).
