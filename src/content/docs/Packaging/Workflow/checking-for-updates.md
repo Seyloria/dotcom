@@ -3,7 +3,7 @@ title : 'Checking for package updates'
 lastUpdated: 2026-10-02T15:00:00Z
 description: "How to check for package updates"
 sidebar:
-  order: 11
+  order: 12
 license: "CC-BY-SA-4.0"
 copyright: "Copyright © 2025 aerynOS Developers"
 ---
