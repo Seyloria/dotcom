@@ -188,7 +188,9 @@ export default defineConfig({
             },
           },
         }),
-        starlightLinksValidator(),
+        starlightLinksValidator({
+          exclude: ['/blog/**']
+        }),
         starlightScrollToTop({
           position: "right",
           showTooltip: true,
